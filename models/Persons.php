@@ -42,7 +42,7 @@ class Persons extends \yii\db\ActiveRecord
             [['lastname', 'firstname', 'middlename'], 'string', 'max' => 30],
             [['job'], 'string', 'max' => 255],
             [['contract'], 'string', 'min' => 6,'max' => 6],
-            //[['lastname','firstname','middlename'], 'match', 'pattern' => '/^[А-Яа-я\s]+$/'],
+            [['lastname','firstname','middlename'], 'match', 'pattern' => '/^[А-Яа-я\s]+$/'],
         ];
     }
 
